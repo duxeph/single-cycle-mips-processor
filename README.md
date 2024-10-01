@@ -1,4 +1,4 @@
-# Single Cycle MIPS Processor
+![image](https://github.com/user-attachments/assets/76d0371a-7422-4156-ae38-46998e40ba23)# Single Cycle MIPS Processor
 This project contains the necessary files to build a single cycle processor built according to MIPS architecture. Using any environment that can run VHDL (.vhd) sources, you can simulate that project.
 
 Each component written in its own file so you can change any part specifically and it should lead to any error by doing so.
@@ -9,7 +9,7 @@ top_tb.vhd file is also shared with some very basic and general algorithms. They
 - A program that calculates the factorial recursively which means in each iteration it calls the function again and again without completing the function it was already in. Then it calculates the factorial as it completes the functions one by one. Has an argument and two outputs, it is explained in the top_tb.vhd file.
 - A program that calculates the factorial using classical loop approach, which means in each iteration it gets back to the beginning of the loop using jump instruction. This program has an input and an output, they are explained in the top_tb.vhd file.
 
-If you are familiar with processors' concept, you should know that the input must be provided in binary format. To convert your MIPS code to binary, you can use script named "bin to vhdl_tb.py". You must provide a mips_out.txt file to that script, which must also be in the format as follows,
+If you are familiar with processors' concept, you should know that the input must be provided in binary/hex format. To convert your MIPS code to binary/hex, you can use script named "bin to vhdl_tb.py". You must provide a mips_out.txt file to that script, which must also be in the format as follows,
 ```
 Address     Code        Basic                      Source
 
@@ -51,5 +51,8 @@ Supported instructions are as follows,
 ```
 If you need further details:
 - All the instructions are written according to the MIPS architecture, so the units "control unit" & "alu control" are all related with the real architecture of a MIPS proccesor.
-- **Note that you should provide your label address divided by four when you are going to use an instruction with label. The reason why these instructions work in that way is the real MIPS architecture is written for the processors which have a huge memory as a requirement. Since we do not need that kind of a huge memory, I decided to divide by 4 all the addresses provided to the program. Please do not hesitate from correcting that manually if you really need to.**
+- **Please note that the addresses provided to the program are updated in a way that differs from the real architecture. If you delete the part that the program updates the addresses you are very likely to encounter with memory issues. The reason why the program updates your addresses is because the user level data stored at very high levels of memory in the MIPS architecture (see MIPS Memory Map provided below that paragraph). In case of mine, it was already enough to have a ~1024 bytes of memory. So I decided to divide all the addresses provided to the program by 1,048,577 (in decimal). To demonstrate, if you have a line like ```j 0x00400014``` in your instructions, program assumes the address you provided is 0x00000014. Please do not hesitate from correcting that manually if you really need to.**
 - Lastly, **RTL schematic** and an example to **testbench results** are provided to you. Please check them if before going deeper into the architecture and before testing your code.
+
+**MIPS Memory Map**
+![alt text](https://www2.it.uu.se/education/course/homepage/os/vt18/module-0/mips-and-mars/mips-memory-layout/)
