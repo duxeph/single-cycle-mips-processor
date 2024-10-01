@@ -22,30 +22,30 @@ Note that this kind of a file can be obtained easily using MARS Mips Simulator.
 
 Supported instructions are as follows,
 ```
-- jr $x          # jump register
-- add $z, $x, $y # add
-- sub $z, $x, $y # subtract
-- div $z, $x, $y # divide
-- and $z, $x, $y # logical and
-- or $z, $x, $y  # logical or
-- nor $z, $x, $y # logical Nor
-- xor $z, $x, $y # logical Xor
-- sll $z, $x, $y # shift left logically
-- srl $z, $x, $y # shift right logically
-- rol $z, $x, $y # rotate left
-- ror $z, $x, $y # rotate right
-- slt $z, $x, $y # set on less than
-- mul $z, $x, $y # multiply
-- lw $x, imm($y) # load word
-- sw $y, imm($x) # store word
-- addi $y, $x, imm  # add immediate
-- ori $y, $x, imm   # logical or immediate
-- xori $y, $x, imm  # logical Xor immediate
-- slti $y, $x, imm  # set on less than immediate
-- jal label         # jump and link
-- beq $x, $y, label # branch equal
-- bne $x, $y, label # branch not equal
-- j label           # jump unconditionally
+- jr $x              # jump register
+- add $z, $x, $y     # add
+- sub $z, $x, $y     # subtract
+- div $z, $x, $y     # divide
+- and $z, $x, $y     # logical and
+- or $z, $x, $y      # logical or
+- nor $z, $x, $y     # logical Nor
+- xor $z, $x, $y     # logical Xor
+- sll $z, $x, $y     # shift left logically
+- srl $z, $x, $y     # shift right logically
+- rol $z, $x, $y     # rotate left
+- ror $z, $x, $y     # rotate right
+- slt $z, $x, $y     # set on less than
+- mul $z, $x, $y     # multiply
+- lw $x, imm($y)     # load word
+- sw $y, imm($x)     # store word
+- addi $y, $x, imm   # add immediate
+- ori $y, $x, imm    # logical or immediate
+- xori $y, $x, imm   # logical Xor immediate
+- slti $y, $x, imm   # set on less than immediate
+- jal label          # jump and link
+- beq $x, $y, label  # branch equal
+- bne $x, $y, label  # branch not equal
+- j label            # jump unconditionally
 ```
 If you need further details:
 All the instructions are written according to the MIPS architecture, so the units "control unit" & "alu control" are all related with the real architecture of a MIPS proccesor.
