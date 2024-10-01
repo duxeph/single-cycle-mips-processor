@@ -55,4 +55,4 @@ If you need further details:
 - Lastly, **RTL schematic** and an example to **testbench results** are provided to you. Please check them if before going deeper into the architecture and before testing your code.
 
 **MIPS Memory Map**
-![alt text]([https://www2.it.uu.se/education/course/homepage/os/vt18/module-0/mips-and-mars/mips-memory-layout/](https://www2.it.uu.se/education/course/homepage/os/vt18/images/mips/MIPS_detailed_memory_layout.png))
+![alt text](https://www2.it.uu.se/education/course/homepage/os/vt18/images/mips/MIPS_detailed_memory_layout.png)
