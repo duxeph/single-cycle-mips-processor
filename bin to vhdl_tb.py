@@ -1,4 +1,4 @@
-with open(r"C:\Users\kagan\Desktop\mips_out.txt", "r") as file:
+with open(r"{write there where you store the mips_out.txt file}\mips_out.txt", "r") as file:
     x = file.read()
 
 x = x.split("\n")[2:-1]
