@@ -59,4 +59,5 @@ If you need further details:
 ![alt text](https://www2.it.uu.se/education/course/homepage/os/vt18/images/mips/MIPS_detailed_memory_layout.png)
 
 ---
-Click [a link](https://courses.missouristate.edu/KenVollmar/MARS/) to get the MARS MIPS Simulator.
+Click [here](https://courses.missouristate.edu/KenVollmar/MARS/) to get the MARS MIPS Simulator.
+---
