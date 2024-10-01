@@ -1,6 +1,8 @@
 # Single Cycle MIPS Processor
 This project contains the necessary files to build a single cycle processor built according to MIPS architecture. Using any environment that can run VHDL (.vhd) sources, you can simulate that project.
+
 Each component written in its own file so you can change any part specifically and it should lead to any error by doing so.
+
 top_tb.vhd file is also shared with some very basic and general algorithms. They are including;
 - A program that "counts up to 20 by increasing 2 in each step.
 - A fibonacci program with an argument and an output, it is explained in the top_tb.vhd file.
