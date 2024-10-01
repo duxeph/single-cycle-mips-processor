@@ -6,6 +6,7 @@ top_tb.vhd file is also shared with some very basic and general algorithms. They
 - A fibonacci program with an argument and an output, it is explained in the top_tb.vhd file.
 - A program that calculates the factorial recursively which means in each iteration it calls the function again and again without completing the function it was already in. Then it calculates the factorial as it completes the functions one by one. Has an argument and two outputs, it is explained in the top_tb.vhd file.
 - A program that calculates the factorial using classical loop approach, which means in each iteration it gets back to the beginning of the loop using jump instruction. This program has an input and an output, they are explained in the top_tb.vhd file.
+
 If you are familiar with processors' concept, you must have known that you must provide the input in binary format. To convert your MIPS code to binary, you can use script named "bin to vhdl_tb.py". You must provide a mips_out.txt file to that script, which must also be in the format as follows,
 ```
  Address    Code        Basic                     Source
