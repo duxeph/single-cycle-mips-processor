@@ -21,6 +21,7 @@ Address     Code        Basic                      Source
 Note that this kind of a file can be obtained easily using MARS Mips Simulator.
 
 Supported instructions are as follows,
+```
 - jr $x          # jump register
 - add $z, $x, $y # add
 - sub $z, $x, $y # subtract
@@ -45,7 +46,7 @@ Supported instructions are as follows,
 - beq $x, $y, label # branch equal
 - bne $x, $y, label # branch not equal
 - j label           # jump unconditionally
-
+```
 If you need further details:
 All the instructions are written according to the MIPS architecture, so the units "control unit" & "alu control" are all related with the real architecture of a MIPS proccesor.
 **Note that you should provide your label address divided by four when you are going to use an instruction with label. The reason why these instructions work in that way is the real MIPS architecture is written for the processors which have a huge memory as a requirement. Since we do not need that kind of a huge memory, I decided to divide by 4 all the addresses provided to the program. Please do not hesitate from correcting that manually if you really need to.**
