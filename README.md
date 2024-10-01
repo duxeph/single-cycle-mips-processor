@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/76d0371a-7422-4156-ae38-46998e40ba23)# Single Cycle MIPS Processor
+# Single Cycle MIPS Processor
 This project contains the necessary files to build a single cycle processor built according to MIPS architecture. Using any environment that can run VHDL (.vhd) sources, you can simulate that project.
 
 Each component written in its own file so you can change any part specifically and it should lead to any error by doing so.
@@ -57,3 +57,6 @@ If you need further details:
 **MIPS Memory Map**
 
 ![alt text](https://www2.it.uu.se/education/course/homepage/os/vt18/images/mips/MIPS_detailed_memory_layout.png)
+
+---
+Click [a link](https://courses.missouristate.edu/KenVollmar/MARS/) to get the MARS MIPS Simulator.
