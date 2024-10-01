@@ -48,6 +48,6 @@ Supported instructions are as follows,
 - j label            # jump unconditionally
 ```
 If you need further details:
-All the instructions are written according to the MIPS architecture, so the units "control unit" & "alu control" are all related with the real architecture of a MIPS proccesor.
-**Note that you should provide your label address divided by four when you are going to use an instruction with label. The reason why these instructions work in that way is the real MIPS architecture is written for the processors which have a huge memory as a requirement. Since we do not need that kind of a huge memory, I decided to divide by 4 all the addresses provided to the program. Please do not hesitate from correcting that manually if you really need to.**
-Lastly, **RTL schematic** and an example to **testbench results** are provided to you. Please check them if before going deeper into the architecture and before testing your code.
+- All the instructions are written according to the MIPS architecture, so the units "control unit" & "alu control" are all related with the real architecture of a MIPS proccesor.
+- **Note that you should provide your label address divided by four when you are going to use an instruction with label. The reason why these instructions work in that way is the real MIPS architecture is written for the processors which have a huge memory as a requirement. Since we do not need that kind of a huge memory, I decided to divide by 4 all the addresses provided to the program. Please do not hesitate from correcting that manually if you really need to.**
+- Lastly, **RTL schematic** and an example to **testbench results** are provided to you. Please check them if before going deeper into the architecture and before testing your code.
