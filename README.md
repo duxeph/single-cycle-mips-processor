@@ -54,10 +54,12 @@ If you need further details:
 - **Please note that the addresses provided to the program are updated in a way that differs from the real architecture. If you delete the part that the program updates the addresses you are very likely to encounter with memory issues. The reason why the program updates your addresses is because the user level data stored at very high levels of memory in the MIPS architecture (see MIPS Memory Map provided below that paragraph). In case of mine, it was already enough to have a ~1024 bytes of memory. So I decided to divide all the addresses provided to the program by 1,048,577 (in decimal). To demonstrate, if you have a line like ```j 0x00400014``` in your instructions, program assumes the address you provided is 0x00000014. Please do not hesitate from correcting that manually if you really need to.**
 - Lastly, **RTL schematic** and an example to **testbench results** are provided to you. Please check them if before going deeper into the architecture and before testing your code.
 
+---
 **MIPS Memory Map**
 
 ![alt text](https://www2.it.uu.se/education/course/homepage/os/vt18/images/mips/MIPS_detailed_memory_layout.png)
 
 ---
 Click [here](https://courses.missouristate.edu/KenVollmar/MARS/) to get the MARS MIPS Simulator.
+
 ---
